@@ -1,0 +1,89 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body bgcolor=#d9d9d9>
+<div class="jumbotron">
+    <center><img src="./assets/logo.png" width="280" height="142"></center>
+</div>
+    <div style="background-color:white;margin:20 0 0 0;height:100%;">
+        <div style="background-color:white;margin:80 0 0 0;width:49.5%; display:inline-block;">
+            <div class="about" style="margin:0 0 0 60;">
+                <h1>About Sahayak</h1>
+                <font color="blue">Sahayak is a system that is easy to deploy and efficient for administration that is managing a disaster. The system will allow the admins and the end user to have a efficient and easy way to access the most important necessities during the time of the disaster.Making high quality information management systems for emergency preparedness, response, recovery and resilience-building accessible to all.</font>
+                <h3>Quick Guide for Sahayak</h3>
+                <h3>Full Documentation</h3>
+                <h3>Request for more features</h3>
+                <h3>Contact Technical Support</h3>
+            </div>
+        </div>
+        <div style="background-color:white;margin:80 0 0 0;width:49.5%;display:inline-block;">
+            <div style="margin:0 0 0 60;" class="form">
+                <h1>Register</h1>
+                Name: <input type="text" id="name"><br><br>
+                Email: <input type="text" id="email"><br><br>
+                Organisation:<input type="text" id="org"><br><br>
+                Password: <input type="password" id="pass"><br><br>
+                Language: <input type="text" id="lang"><br><br>
+                <button id="reg">Register</button> Already Registerd?
+            </div>
+        </div>
+</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+
+<!-- <script>
+
+$(function(){
+    var $name=$("#name");
+    var $email=$("#email");
+    var $org=$("#org");
+    var $pass=$("#pass");
+    var $lang=$("#lang");
+
+    $('#id').on('click',function(e){
+        var person={
+            name:$name.val(),
+            email:$email.val(),
+            org:$org.val(),
+            pass:$pass.val(),
+            lang:$lang.val()
+
+        }
+        console.log("person",person);
+        $.ajax({
+        type:'POST',
+        url:'/api/register',
+        data:person,
+        dataType: "html",
+        success:function( person, textStatus, jQxhr){
+            person=JSON.parse(person)
+            console.log(person)
+            
+        },
+        error:function(err){
+            alert("no!!")
+            console.log(err)
+        }
+        
+    })
+
+})
+
+</script> -->
+        
+<style>
+    @media only screen and (max-width: 600px) {
+    .about {
+        display: none;
+    }
+
+}
+</style>
+
+</html>
